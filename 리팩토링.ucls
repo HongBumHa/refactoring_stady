@@ -4,7 +4,7 @@
   <class id="1" language="java" name="kr.or.dgit.refactoring_stady.Movie" project="refactoring_stady" 
     file="/refactoring_stady/src/kr/or/dgit/refactoring_stady/Movie.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="273" y="238"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
@@ -13,7 +13,7 @@
   <class id="2" language="java" name="kr.or.dgit.refactoring_stady.Rental" project="refactoring_stady" 
     file="/refactoring_stady/src/kr/or/dgit/refactoring_stady/Rental.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="565" y="236"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
@@ -22,24 +22,36 @@
   <class id="3" language="java" name="kr.or.dgit.refactoring_stady.Customer" project="refactoring_stady" 
     file="/refactoring_stady/src/kr/or/dgit/refactoring_stady/Customer.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="872" y="240"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <association id="4">    
+  <dependency id="4">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <association id="5">    
     <end type="SOURCE" refId="2" navigable="false">      
-      <attribute id="5" name="movie"/>      
-      <multiplicity id="6" minimum="0" maximum="1"/>    
+      <attribute id="6" name="movie">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="7" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="1" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="7">    
+  <association id="8">    
     <end type="SOURCE" refId="3" navigable="false">      
-      <attribute id="8" name="rentals"/>      
-      <multiplicity id="9" minimum="0" maximum="2147483647"/>    
+      <attribute id="9" name="rentals">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="10" minimum="0" maximum="2147483647">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="2" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
